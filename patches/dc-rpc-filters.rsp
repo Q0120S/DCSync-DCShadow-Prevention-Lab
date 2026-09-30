@@ -1,0 +1,16 @@
+rpc filter
+add rule layer=um actiontype=block
+add condition field=if_uuid matchtype=equal data=c681d488-d850-11d0-8c52-00c04fd90f7e
+add filter
+
+add rule layer=um actiontype=block
+add condition field=if_uuid matchtype=equal data=df1941c5-fe89-4e79-bf10-463657acf44d
+add filter
+
+add rule layer=um actiontype=block
+add condition field=if_uuid matchtype=equal data=4fc742e0-4a10-11cf-8273-00aa004ae673
+add filter
+
+add rule layer=um actiontype=block
+add condition field=if_uuid matchtype=equal data=12345678-1234-abcd-ef00-0123456789ab
+add filter

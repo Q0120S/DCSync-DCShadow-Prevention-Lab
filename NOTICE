@@ -1,0 +1,51 @@
+DCSync Prevention Lab — Attribution and third-party components
+================================================================
+
+This repository bundles two open-source projects. Their upstream licenses and
+copyright notices are preserved in their respective subdirectories. Nothing in
+the top-level MIT LICENSE overrides or replaces their terms — use of the
+bundled projects is governed by their own LICENSE files.
+
+--------------------------------------------------------------------------
+1. RPC Firewall (in rpcfirewall/)
+--------------------------------------------------------------------------
+   Upstream project : zeronetworks/rpcfirewall
+   Upstream URL     : https://github.com/zeronetworks/rpcfirewall
+   Upstream license : see rpcfirewall/LICENSE
+
+   Our modifications add a new DRS Request-Inspection module (drsCapture.*
+   and drsInspect.*), a deployment helper script (Deploy-DrsHarden.ps1),
+   and four surgical wire-in edits to dllmain.cpp. See CHANGES-TO-UPSTREAM.md
+   for the exact diff.
+
+   The upstream base logic (Detours hook attach/detach, processRPCCallInternal,
+   event log formatting, config parsing) is unmodified.
+
+--------------------------------------------------------------------------
+2. Active Directory Firewall / DCFWTool (in DCFWTool/)
+--------------------------------------------------------------------------
+   Upstream project : MichaelGrafnetter/active-directory-firewall
+   Upstream URL     : https://github.com/MichaelGrafnetter/active-directory-firewall
+   Upstream license : see DCFWTool/LICENSE
+
+   We added one file: Set-ADDSFirewallPolicy.json — a config with lab.local
+   values. The tool itself is unmodified.
+
+--------------------------------------------------------------------------
+3. Documentation and original code
+--------------------------------------------------------------------------
+   All content under docs/, scripts/, patches/, and the top-level Markdown
+   files (README.md, REPRODUCE-LAB.md, CHANGES-TO-UPSTREAM.md) is original
+   work by this repository's contributors, licensed under the MIT LICENSE at
+   the top level.
+
+--------------------------------------------------------------------------
+Trademarks
+--------------------------------------------------------------------------
+   Microsoft, Windows, Active Directory, and related product names are
+   trademarks of Microsoft Corporation. Their use in this repository is for
+   accurate technical description only and does not imply endorsement.
+
+   Mimikatz, secretsdump, Impacket, PetitPotam, and other referenced tools
+   belong to their respective authors. They are referenced by name for
+   accurate description of tested attack shapes; no source is included.

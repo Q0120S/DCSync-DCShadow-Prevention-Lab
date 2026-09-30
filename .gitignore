@@ -1,0 +1,46 @@
+# Build outputs
+rpcfirewall/x64/
+rpcfirewall/**/Debug/
+rpcfirewall/**/Release/
+rpcfirewall/**/*.pdb
+rpcfirewall/**/*.ilk
+rpcfirewall/**/*.exp
+rpcfirewall/**/*.lib
+rpcfirewall/**/*.obj
+rpcfirewall/**/*.log
+rpcfirewall/**/*.tlog
+rpcfirewall/**/*.iobj
+rpcfirewall/**/*.ipdb
+rpcfirewall/**/*.res
+rpcfirewall/packages/
+
+# Visual Studio user files
+*.suo
+*.user
+*.userprefs
+*.opendb
+.vs/
+
+# NuGet
+packages/
+*.nupkg
+
+# Test / capture artifacts — must never leak into a repo
+capture/
+*.bin
+manifest.csv
+manifest.old.csv
+decisions.log
+partners.log
+partners.txt
+allowlist.txt
+mimikatz*.log
+mimikatz*.exe
+
+# Sentinels (per-DC operational state)
+enabled
+drsi_*
+
+# Lab-specific outputs
+baseline_repl.txt
+*.pdmp
