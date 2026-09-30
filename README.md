@@ -34,7 +34,10 @@ DCSync-DCShadow-Prevention-Lab/
 │   ├── DCSync-Prevention-Explained.md         (why it works, 5-min read)
 │   ├── DCSync-Hardening-Clean-StepByStep.md   (what to run, terse)
 │   ├── DCSync-Hardening-Runbook.md            (runbook + Fixes log)
-│   └── DCSync-Prevention-Complete-Guide.md    (definitive combined reference)
+│   ├── DCSync-Prevention-Complete-Guide.md    (definitive combined reference)
+│   └── PoC-Screenshots.md                     (screenshot-by-screenshot proof narrative)
+│
+├── screenshots/               ← 15 lab screenshots referenced by PoC-Screenshots.md
 │
 ├── scripts/                   ← helper scripts we wrote
 │   └── Test-DcsyncTransports.ps1              (transport isolation harness)
